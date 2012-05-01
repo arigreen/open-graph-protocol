@@ -123,6 +123,13 @@ The `og:audio` tag only has the first 3 properties available
     <meta property="og:audio:secure_url" content="https://secure.example.com/sound.mp3" />
     <meta property="og:audio:type" content="audio/mpeg" />
 
+### <a id="geopoint" href="#geopoint">Geopoint</a>
+The 'geopoint' custom property is used to define a spatial location. It contains two required properties and one optional property:
+
+ * `latitude` - [float](#float) - Latitude of location, required.
+ * `longitude` - [float](#float) - Longitude of location, required.
+ * `altitude` - [float](#float) - Altitude of location, optional.
+
 ---
 ## <a id="array" href="#array">Arrays</a>
 
@@ -297,6 +304,10 @@ yet are broadly used and agreed upon.
 * `profile:last_name` - [string](#string) - A name inherited from a family or marriage and by which the individual is commonly known.
 * `profile:username` - [string](#string) - A short unique string to identify them.
 * `profile:gender` - [enum](#enum)(male, female) - Their gender.
+
+<a name="type_place" href="#type_place">`place`</a> - Namespace URI: [`http://ogp.me/ns/place#`](http://ogp.me/ns/place#)
+
+* `place:location` - [geopoint](#geopoint) - The point in space where the place is located.
 
 <a name="type_website" href="#type_website">`website`</a> - Namespace URI: [`http://ogp.me/ns/website#`](http://ogp.me/ns/website)
 
